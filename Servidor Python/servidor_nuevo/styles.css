@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    background: #1f4068;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+h3:hover {
+    background: #2f5d8a;
+}
+
+button, input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #3282b8;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, input:hover {
+    background: #0f4c75;
+    transform: scale(1.05);
+}
+
+button.request-all-button {
+    background: #bbe1fa;
+    color: #1b262c;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button.request-all-button:hover {
+    background: #3282b8;
+    color: #fff;
+}
+
+#nodes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.node {
+    border: 1px solid #1f4068;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: rgba(31, 64, 104, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.node:hover {
+    transform: scale(1.02);
+}
+
+.node div.buttons-group {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.node.active div.buttons-group {
+    display: flex;
+}
+
+.node .buttons-group div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input {
+    width: calc(100% - 20px);
+}
+
+.sensors {
+    margin-top: 10px;
+}
+
+.sensor-error {
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: none;
+}
